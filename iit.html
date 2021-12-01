@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link href="bootstrap5-dropdown-ml-hack-hover.css" rel="stylesheet" />
+		<script src="bootstrap5-dropdown-ml-hack.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>IIT DELHI</title>
+<style>
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-left {
+  position: absolute;
+       position: absolute;
+    top: 107px;
+    left: 50%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.col:hover{
+color:white;
+border-radius: 10px;
+background-color: crimson;
+}
+.col{
+  color: aliceblue;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+}
+.col1:hover{
+  color: white;
+  border-radius: 10px;
+  background-color: crimson;
+}
+
+.wave{
+  position: absolute;
+  bottom: 0;
+  top:180px;
+  left:0;
+  width: 100%;
+  height: 100px;
+  background:url(wave.png);
+  background-size: 1000px 100px;
+}
+.wave.wave1{
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0px;
+}
+.wave.wave2{
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+.wave.wave3{
+  animation: animate3 10s linear infinite;
+  z-index: 998;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+.wave.wave4{
+  animation: animate4 5s linear infinite;
+  z-index: 997;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15;
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: 1000px;
+  }
+}
+@keyframes animate2
+{
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: -1000px;
+  }
+}
+@keyframes animate3
+{
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: -1000px;
+  }
+}
+@keyframes animate4
+{
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: -1000px;
+  }
+}
+</style>
+  </head>
+  <body>
+    <nav class="d-flex align-items-center navbar navbar-expand-lg navbar-dark fixed-top">
+ 	 <div class="container p-0" style="color: white;">
+		<a class="navbar-brand" href="#">
+ 		 	<img src="logo.png" style="display: inline-block; width:120px; height:90px; margin-bottom:25px; padding:0px;">
+ 		 	<div class="a" style="display:inline-block; margin-left:10px; color:white;">
+ 		 	<span class="ftit" style="border-bottom: 3px solid white;">School of Artificial Intelligence(ScAI)</span>
+     			<span class="tit" style="display: block;">Indian Institute of Technology,Delhi</span></div>
+  		 </a>
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      	<span class="navbar-toggler-icon"></span>
+    	</button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav p-3 ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="dropdown-toggle col" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            People
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item disabled" href="#">Student</a></li>
+            <li><a class="dropdown-item col1" href="#">Faculty</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      <ul class="navbar-nav p-3 ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="dropdown-toggle col" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Research
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item col1" href="#">Core</a></li>
+            <li><a class="dropdown-item col1" href="#">Applied</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav p-3 ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="dropdown-toggle col" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Join Us
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item col1" href="#">prospective master students</a></li>
+            <li><a class="dropdown-item col1" href="#">prospective master students</a></li>
+            <li><a class="dropdown-item col1" href="#">prospective PostDocs</a></li>
+            <li><a class="dropdown-item col1" href="#">prospective Faculty</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li><a class="nav-item col" href="#" style="text-decoration: none; margin:10px;padding: 10px;color: white;">Support Us</a></li>
+    </ul>
+    <ul class="navbar-nav">
+    <li><a class="nav-item col" href="#" style="text-decoration: none; margin:10px;padding: 10px;color: white;">News</a></li>
+  </ul>
+  </div>
+</nav>
+<img src="blue.jpg" style="height:260px; width:100%">
+ <div class="top-left">Faculty</div>
+
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+      
+
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+        <div class="col12">
+          <div class="card h-60">
+            <img src="hero1.jpg" class="card-img-top w-80 h-50" alt="appu">
+            <div class="card-body text-dark">
+              <h5 class="card-title">punith rajkumar</h5>
+              <ul>
+                <li>Artificial Intelligence</li>
+                <li>Natural Language Processing</li>
+                <li>Machine Learning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col12">
+          <div class="card h-80">
+            <img src="hero2.jpg" class="card-img-top w-80 h-50" alt="datshan">
+            <div class="card-body text-dark">
+              <h5 class="card-title">Darshan</h5>
+              <ul>
+                <li>Molecular Simulations</li>
+                <li>Enhancing Efficiency Of Various Codes</li>
+                <li>HPC</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col12">
+          <div class="card h-60">
+            <img src="hero3.jpg" class="card-img-top w-80 h-50" alt="dali">
+            <div class="card-body text-dark">
+              <h5 class="card-title">Dali</h5>
+              <ul>
+                <li>Machine Learning</li>
+                <li>Enhancing Efficiency Of Various Codes</li>
+                <li>Molecular Simulations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col12">
+          <div class="card h-60">
+            <img src="hero7.jpg" class="card-img-top w-80 h-50" alt="vijay">
+            <div class="card-body text-dark">
+              <h5 class="card-title">Yash</h5>
+              <ul>
+                <li>abc</li>
+                <li>abc</li>
+                <li>abc</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col12">
+          <div class="card h-60">
+            <img src="hero5.jpg" class="card-img-top w-80 h-50" alt="vijay">
+            <div class="card-body text-dark">
+              <h5 class="card-title">Vijay</h5>
+              <ul>
+                <li>HPC</li>
+                <li>Molecular Simulations</li>
+                <li>Enhancing Efficiency Of Various Codes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col12">
+          <div class="card h-60">
+            <img src="hero6.jpg" class="card-img-top w-80 h-50" alt="vijay">
+            <div class="card-body text-dark">
+              <h5 class="card-title">Salman Khan</h5>
+              <ul>
+                <li>Machine Learning</li>
+                <li>Molecular Simulations</li>
+                <li>Enhancing Efficiency Of Various Codes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
