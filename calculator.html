@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="container">
+    <input type="text" id="result"><br>
+    <div class="row">
+        <input type="button" value="1" onclick="view(1)">
+        <input type="button" value="2" onclick="view(2)">
+        <input type="button" value="3" onclick="view(3)">
+        <input type="button" value="/" onclick="view('/')"><br>
+        <input type="button" value="4" onclick="view(4)">
+        <input type="button" value="5" onclick="view(5)">
+        <input type="button" value="6" onclick="view(6)">
+        <input type="button" value="-" onclick="view('-')"><br>
+        <input type="button" value="7" onclick="view(7)">
+        <input type="button" value="8" onclick="view(8)">
+        <input type="button" value="9" onclick="view(9)">
+        <input type="button" value="+" onclick="view('+')"><br>
+        <input type="button" value="c" onclick="clr()">
+        <input type="button" value="0" onclick="view(0)">
+        <input type="button" value="=" onclick="equal()">
+        <input type="button" value="*" onclick="view('*')">
+    </div>
+</div>
+
+<script src="cal.js"></script>
+</body>
+</html>

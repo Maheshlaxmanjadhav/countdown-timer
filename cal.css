@@ -1,0 +1,36 @@
+.container{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 16px;    
+    margin-left: 540px;
+}
+input[type=button]{
+    padding: 16px;
+    margin: 3px;
+    background-color: rgb(73, 73, 73);
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 40px;
+    
+}
+input[type=button]:hover{
+    background-color: rgb(247, 21, 89);
+    color: black;
+}
+input[type=text]{
+    width: 200px;
+    height: 52px;
+    background-color: #f7ca1d;
+    font-size: 26px;
+    margin: 11px;
+    border: none;
+    border-radius: 5px;
+}
+.row{
+    margin-left: 14px;
+}
+h1{
+    text-align: center;
+}
