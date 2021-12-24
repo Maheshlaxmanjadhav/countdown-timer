@@ -20,4 +20,5 @@ input[type=text]{
     font-size: 26px;
     border: none;
     border-radius: 5px;
+    text-align:center;
 }
