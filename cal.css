@@ -14,10 +14,9 @@ input[type=button]:hover{
 }
 input[type=text]{
     margin: 2px;
-    padding: -18px;
-    width: 54%;
+    width: 62%;
     height: 80px;
-    background-color: rgb(0, 255, 128);
+    background-color: rgb(190, 247, 57);
     border: none;
     border-radius: 10px;
     text-align: center;
