@@ -16,27 +16,32 @@
         <div class="row justify-content-center my-5">
             <div class="col-auto border shadow text-center py-3">
                 <h3>CALCULATOR</h3>
-                <div class="my-3"><input type="text" id="result">
-                <input type="button" value="c" onclick="clr()"></div>
-                <input type="button" value="1" onclick="view(1)">
-                <input type="button" value="2" onclick="view(2)">
-                <input type="button" value="3" onclick="view(3)">
+                <div class="my-3"><input type="text" id="result"></div>
+
+                <input type="button" value="(" onclick="view('(')">
+                <input type="button" value=")" onclick="view(')')">
+                <input type="button" value="%" onclick="view('%')">
+                <input type="button" value="c" onclick="clr()"><br>
+
+                <input type="button" value="7" onclick="view(7)">
+                <input type="button" value="8" onclick="view(8)">
+                <input type="button" value="9" onclick="view(9)">
                 <input type="button" value="/" onclick="view('/')"><br>
 
                 <input type="button" value="4" onclick="view(4)">
                 <input type="button" value="5" onclick="view(5)">
                 <input type="button" value="6" onclick="view(6)">
+                <input type="button" value="x" onclick="view('*')"><br>
+
+                <input type="button" value="1" onclick="view(1)">
+                <input type="button" value="2" onclick="view(2)">
+                <input type="button" value="3" onclick="view(3)">
                 <input type="button" value="-" onclick="view('-')"><br>
 
-                <input type="button" value="7" onclick="view(7)">
-                <input type="button" value="8" onclick="view(8)">
-                <input type="button" value="9" onclick="view(9)">
-                <input type="button" value="+" onclick="view('+')"><br>
-
-                <input type="button" value="." onclick="view('.')">
                 <input type="button" value="0" onclick="view(0)">
+                <input type="button" value="." onclick="view('.')">
                 <input type="button" value="=" onclick="equal()">
-                <input type="button" value="*" onclick="view('*')"><br>
+                <input type="button" value="+" onclick="view('+')"><br>
                 
             </div>
         </div>
