@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>LOCAL STRORAGE</title>
+
+    <script src="local.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center my-5">
+            <div class="col-auto h1 fw-bold">Simple Application</div>
+        </div>
+        <div class="row justify-content-evenly my-5">
+            <div class="col-4 shadow p-5 bg-light">
+                <form onsubmit="event.preventDefault()">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="fname" aria-describedby="emailHelp"
+                            placeholder="First_Name:">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="lname" aria-describedby="emailHelp"
+                            placeholder="Last_Name:">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="pwd" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit" onclick="store()">Submit</button>
+                    <button type="reset" class="btn btn-primary" id="clr" onclick="myFunction()">Clear</button>
+                    <button type="dis" class="btn btn-primary" id="dsp" onclick="display()">Display</button>
+                </form>
+            </div>
+            <div class="col-4">
+                <table class="table table-bordered">
+                    <thead class="bg-dark text-white">
+                      <tr>
+                        <th scope="col">First_Name</th>
+                        <th scope="col">Last_Name</th>
+                        <th scope="col">Email_Id</th>
+                        <th scope="col">Password</th>
+                      </tr>
+                    </thead>
+                    <tbody class="p-5">
+                      <tr>
+                        <td id="fn"></td>
+                        <td id="ln"></td>
+                        <td id="ed"></td>
+                        <td id="pd"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
