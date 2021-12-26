@@ -21,7 +21,7 @@
             <div class="col-auto h1 fw-bold">Simple Application</div>
         </div>
         <div class="row justify-content-evenly my-5">
-            <div class="col-4 shadow p-5 bg-light">
+            <div class="col-auto shadow p-5 bg-light">
                 <form onsubmit="event.preventDefault()">
                     <div class="mb-3">
                         <input type="text" class="form-control" id="fname" aria-describedby="emailHelp"
@@ -43,8 +43,9 @@
                     <button type="dis" class="btn btn-primary" id="dsp" onclick="display()">Display</button>
                 </form>
             </div>
-            <div class="col-4">
-                <table class="table table-bordered">
+            <div class="col-auto">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
                     <thead class="bg-dark text-white">
                       <tr>
                         <th scope="col">First_Name</th>
@@ -61,7 +62,8 @@
                         <td id="pd"></td>
                       </tr>
                     </tbody>
-                  </table>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
