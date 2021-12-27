@@ -19,7 +19,7 @@
         <div class="row justify-content-center bg-success bg-gradient shadow rounded-3">
             <div class="col-auto shadow my-2 pb-5 bg-light rounded-3">
                 <h2 class="text-danger fw-bold mt-3 mb-5 text-center">SangamOne Enquiry Form</h2>
-                <form>
+                <form action="thank.html">
                     <div class="mb-3">
                         <label for="exampleInputCName" class="form-label">Company Name</label>
                         <select class="form-select rounded-pill" aria-label="Default select example">
@@ -30,18 +30,18 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Name</label>
-                        <input type="text" name="sname" class="form-control rounded-pill" placeholder="Enter Your Name">
+                        <input type="text" name="sname" class="form-control rounded-pill" placeholder="Enter Your Name" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email</label>
                         <input type="email" name="email" class="form-control rounded-pill" id="exampleInputEmail1"
-                            placeholder="Enter Your Email">
+                            placeholder="Enter Your Email" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputContact" class="form-label">ContactNo</label>
                         <input type="text" name="Cno" class="form-control rounded-pill" name="PhoneNumber"
-                            pattern="[+][7-9]{1}[0-9]{9}" title="Phone number with +7-+9 and remaing 9 digit with 0-9"
-                            placeholder="Enter Your ContactNo">
+                            pattern="[+]{1}[1-9]{2}[0-9]{10}" title="add country code and remaing 10 digit with 0-9"
+                            placeholder="Enter Your ContactNo" required>
                     </div>
                     <div class="mb-3">
                         <p>Select The Course</p>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputCourse" class="form-label">Selected Course</label>
-                        <input type="text" id="course" name="scourse" class="form-control rounded-pill" placeholder="selected course is">
+                        <input type="text" id="course" name="scourse" class="form-control rounded-pill" placeholder="selected course is" required>
                     </div>
                     <script>
                         function course1(){
