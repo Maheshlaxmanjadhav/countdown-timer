@@ -18,15 +18,17 @@
     <div class="container">
         <div class="row justify-content-center bg-success bg-gradient shadow rounded-3">
             <div class="col-auto shadow my-2 pb-5 bg-light rounded-3">
-                <h2 class="text-warning fw-bold mt-3 mb-5 text-center">SangamOne Enquiry Form</h2>
+                <h2 class="text-warning fw-bold mt-3 mb-5 text-center">BhashaVidya Enquiry Form</h2>
                 <form action="thank.html" autocomplete="off">
                     <div class="mb-3">
                         <label for="exampleInputCName" class="form-label">Company Name</label>
-                        <input type="text" class="form-control rounded-pill bg-white" id="cName" value="BhashaVidhya" readonly>
+                        <input type="text" class="form-control rounded-pill bg-white" id="cName" value="BhashaVidhya"
+                            readonly>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Name</label>
-                        <input type="text" name="sname" class="form-control rounded-pill" placeholder="Enter Your Name" required>
+                        <input type="text" name="sname" class="form-control rounded-pill" placeholder="Enter Your Name"
+                            required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email</label>
@@ -41,23 +43,24 @@
                     </div>
                     <div class="mb-3">
                         <p>Select The Course</p>
-                        <input class="form-check-input" type="radio" id="radio1" name="course"
-                            value="Full Stack Developer" onclick="course1()">
-                        <label for="radio1">Full Stack Developer</label><br>
-                        <input class="form-check-input" type="radio" id="radio2" name="course"
-                            value="Mobile App Developer" onclick="course2()">
-                        <label for="radio2">Mobile App Developer</label><br>
+                        <input class="form-check-input" type="radio" id="radio1" name="course" value="Above 16 Years"
+                            onclick="course1()">
+                        <label for="radio1">Above 16 Years</label><br>
+                        <input class="form-check-input" type="radio" id="radio2" name="course" value="Below 16 Years"
+                            onclick="course2()">
+                        <label for="radio2">Below 16 Years</label><br>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputCourse" class="form-label">Selected Course</label>
-                        <input type="text" id="course" name="scourse" class="form-control rounded-pill" placeholder="selected course is" required>
+                        <input type="text" id="course" name="scourse" class="form-control rounded-pill"
+                            placeholder="selected course is" required>
                     </div>
                     <script>
-                        function course1(){
+                        function course1() {
                             var rd1 = document.getElementById("radio1").value;
                             document.getElementById("course").value = rd1;
                         }
-                        function course2(){
+                        function course2() {
                             var rd2 = document.getElementById("radio2").value;
                             document.getElementById("course").value = rd2;
                         }
