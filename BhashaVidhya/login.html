@@ -20,12 +20,23 @@
                 <h1 class="text-warning m-3 fw-bold h4 text-center">Please Login</h1>
                 <form action="" autocomplete="off">
                     <div class="mb-3">
-                        <input type="text" name="uname" class="form-control bg-white shadow text-dark rounded-pill" id="uname" aria-describedby="username"
-                            placeholder="UserName">
+                        <input type="text" name="uname" class="form-control bg-white shadow text-dark rounded-pill"
+                            id="uname" aria-describedby="username" placeholder="UserName">
                     </div>
                     <div class="mb-3">
-                        <input type="password" name="pass" class="form-control bg-white shadow text-dark rounded-pill" id="Pwd" placeholder="Password">
+                        <input type="password" name="pass" class="form-control bg-white shadow text-dark rounded-pill"
+                            id="Pwd" placeholder="Password">
                     </div>
+                    <div class="fst-italic m-1 text-primary mb-3"><input type="checkbox" onclick="fun1()" class="form-check-input">Show Password</div>
+                    <script>
+                        function fun1() {
+                            var x = document.getElementById("Pwd");
+                            if (x.type == "password") {
+                                x.type = "text";
+                            } else
+                                x.type = "password";
+                        }
+                    </script>
                     <div class="d-grid">
                         <button type="submit" name="sub" class="btn btn-warning shadow my-2 rounded-pill">Login</button>
                     </div>
