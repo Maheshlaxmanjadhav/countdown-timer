@@ -15,7 +15,7 @@ let suggestions = [
         let emptyArray = [];
         if(userData){
             icon.onclick = ()=>{
-                    webLink = `${userData}.html`;
+                    webLink = `home.html`;
                     linkBox.setAttribute("href", webLink);
                     linkBox.click();
             }
@@ -40,7 +40,7 @@ let suggestions = [
         let selectData = element.textContent;
         inputBox.value = selectData;
         icon.onclick = ()=>{
-            webLink = `${selectData}.html`;
+            webLink = `home.html`;
             linkBox.setAttribute("href", webLink);
             linkBox.click();
         }
