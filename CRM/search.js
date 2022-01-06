@@ -1,6 +1,6 @@
 let suggestions = [
     "Mahesh Stationery",
-    "Aishwarya Bekary",
+    "Aishwarya Bakery",
     "Santosh Salon",
 ];
 const searchBox = document.querySelector(".search-box");
