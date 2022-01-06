@@ -15,14 +15,15 @@
         }
         body{
             padding: 0 20px;
+            position: relative;
         }
         .container {
+            position: absolute;
             background-color: brown;
             display: inline-block;
-            margin-left: 590px;
-            margin-top: 25px;
             padding: 10px;
             border-radius: 25px;
+            margin: 10% 10% 10% 36%;
         }
 
         h1 {
@@ -31,6 +32,11 @@
         }
         .btn{
             text-align: center;
+        }
+        @media (max-width:500px){
+            .container {
+                margin: 10% 10% 10% 15%;
+            }
         }
     </style>
 </head>
