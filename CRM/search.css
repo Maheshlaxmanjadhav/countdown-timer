@@ -6,7 +6,6 @@
 }
 body{
     background: linear-gradient(to left, #141e30 0%, #243b55 100%);
-    background-size: cover;
 }
 .container{
 max-width: 450px;
