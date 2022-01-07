@@ -5,17 +5,18 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body{
-    background: #2f80dd;
-    padding: 0 20px;
+    background: linear-gradient(to left, #141e30 0%, #243b55 100%);
+    background-size: cover;
 }
 .container{
 max-width: 450px;
 margin: 150px auto;
 }
-.container h1{
+.container h5{
     text-align: center;
     margin-bottom: 65px;
-    color: rgb(255, 51, 0);
+    color: rgb(152, 247, 0);
+    font-weight: bold;
 }
 .container .search-box{
     background: #efefef;
@@ -32,7 +33,7 @@ margin: 150px auto;
     border-radius: 2px;
     padding: 0 60px 0 20px;
     font-size: 18px;
-    box-shadow: 0px 1px 0px rgb(255, 159, 159);
+    box-shadow: 0px 0px 0px rgb(245, 0, 0);
 }
 .search-box.active input{
     border-radius: 5px 5px 0 0;
@@ -74,14 +75,14 @@ margin: 150px auto;
     text-align: center;
     line-height: 55px;
     font-size: 20px;
-    color: saddlebrown;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     border: none;
     background: none;
     border-radius: 4px;
 }
 .search-box button:hover{
-    background: #fa1e1e;
+    background: #0088e2;
     color: beige;
 
 }
