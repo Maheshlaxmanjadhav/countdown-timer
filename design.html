@@ -50,7 +50,7 @@
             display: flex;
         }
         form.example input[type=text] {
-            padding: 10px;
+            padding: 2px;
             font-size: 17px;
             border: 1px solid grey;
             float: left;
@@ -63,14 +63,13 @@
         form.example button {
             float: left;
             width: 20%;
-            padding: 10px;
+            padding: 2px;
             color: rgb(0, 0, 0);
             font-size: 17px;
             border: none;
             cursor: pointer;
             background: white;
         }
-
         form.example::after {
             content: "";
             clear: both;
@@ -84,8 +83,69 @@
             border-bottom: 3px solid rgb(5, 231, 5);
             font-weight: bold;
         }
-        @media(max-width: 600px) {
-        body {
+        
+        /*mmm*/
+
+
+/* The popup form - hidden by default */
+.form-popup {
+ 
+position: fixed;
+bottom: 134px;
+right: 10%;
+z-index: 13;
+width: 600px;
+}
+
+/* Add styles to the form container */
+.form-container {
+padding: 12px;
+background-color: white;
+outline: none;
+border: none;
+border-radius: 25px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text] {
+  width: 90%;
+  padding: 6px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #ffffff;
+  border: 1px solid rgb(192, 191, 191);
+  border-radius: 10px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #30f10a;
+color: white;
+padding: 11px;
+border: none;
+cursor: pointer;
+width: 49%;
+margin-bottom: 10px;
+opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(155, 155, 155);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+@media(max-width: 600px) {
+            body {
             background-color: rgb(220, 220, 255);
             }
             #nav{
@@ -96,10 +156,16 @@
                 width: 130%;
                 height: 50px;
                 background: none;
-                border-radius: 25px;
+                position: relative;
+            }
+            .container2 .example{
+                display: none;
             }
             .container2 button{
-                display: none;
+                width: 100%;
+                background: #f10a4f;
+                margin-right: 25px;
+                height: 45px;
             }
             .mt-5{
                 width: 130%;
@@ -113,17 +179,23 @@
             .accordion-body .accd button{
                 font-size: xx-small;
                 font-weight: lighter;
-                margin: -28px;
-                border: 1px solid rgb(68, 68, 68);
+                margin: -20px;
+                padding: 2px;
+                border: 1px solid rgb(170, 170, 170);
                 text-align: start;
             }
             .container2 form #sear{
-                border-radius: 25px;
-                margin-left: -60px;
-                width: 236%;
                 background: none;
             }
+            .form-popup{
+                position: fixed;
+                bottom: 130px;
+                right: 0%;
+                z-index: 13;
+                width: 410px;
+                font-size: xx-small;
         }
+    }
     </style>
 </head>
 
@@ -183,7 +255,46 @@
                     </nav>
                 </div>
                 <div class="container2 bg-light">
-                    <button type="button" class="btn btn-success1">Add New Schedule</button>
+                    <button type="button" class="btn btn-success1 open-button" onclick="openForm()">Add New Schedule</button>
+
+                    <div class="form-popup" id="myForm">
+                        <form action="#" class="form-container shadow mt-4">
+                            <h4 class="fw-bold text-center">Create New Schedule</h4><br>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name1"><b>Schedule Name</b></label>
+                                    <input type="text" placeholder="Enter Name" name="name" id="name1" required>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-3">
+                                    <label for="dt"><b>Start Date</b></label><br>
+                                    <input type="date" id="date" name="dt" required style="border: 1px solid rgb(138, 138, 138); border-radius: 10px;"><br>
+                                </div>
+                                <div class="col-3">
+                                    <label for="dt"><b>End Date</b></label><br>
+                                    <input type="date" id="date" name="dt" required style="border: 1px solid rgb(138, 138, 138); border-radius: 10px;">
+                                </div>
+                                <div class="col-4">
+                                    <label for="wk"><b>Enter No. of weeks</b></label><br>
+                                    <input type="number" id="week" name="wk" required style="border: 1px solid rgb(138, 138, 138); border-radius: 10px;">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                            <div class="col"><button type="button" class="btn cancel" onclick="closeForm()">Close</button></div>
+                           <div class="col"><button type="submit" class="btn">Create</button></div>
+                             </div>
+                        </form>
+                    </div>
+                     <script>
+                        function openForm() {
+                          document.getElementById("myForm").style.display = "block";
+                        }
+                        
+                        function closeForm() {
+                          document.getElementById("myForm").style.display = "none";
+                        }
+                        </script>
                     <form class="example" action="#" style="margin:auto;max-width:200px;">
                         <button type="button"><i class="bi bi-search"></i></button>
                         <input type="text" placeholder="Search.." name="search1" id="sear">
@@ -210,17 +321,17 @@
                                     <p class="fw-bold">19 February 2020</p>
                                 </div>
                                 <div class="col-3 ms-auto">
-                                    <butoon class="btn btn-success btn-outline">Update</butoon>
+                                    <butoon class="btn btn-success">Update</butoon>
                                 </div>
                             </div>
                             <div class="row justify-content-evenly accd">
-                                <div class="col-1 mx-2"><button type="button" class="btn btn-light">Sunday</button></div>
-                                <div class="col-1 mx-2"><button type="button" class="btn btn-light">Monday</button></div>
-                                <div class="col-1 mx-2"><button type="button" class="btn btn-light">Tueday</button></div>
-                                <div class="col-1 me-4"><button type="button" class="btn btn-light">Wednesday</button></div>
-                                <div class="col-1 mx-2"><button type="button" class="btn btn-light">Thursday</button></div>
-                                <div class="col-1 mx-2"><button type="button" class="btn btn-light">Friday</button></div>
-                                <div class="col-1 mx-2"><button type="button" class="btn btn-light">Saturday</button></div>
+                                <div class="col-1 mx-2"><button type="button" class="btn btn-outline-dark">Sunday</button></div>
+                                <div class="col-1 mx-2"><button type="button" class="btn btn-outline-dark">Monday</button></div>
+                                <div class="col-1 mx-2"><button type="button" class="btn btn-outline-dark">Tueday</button></div>
+                                <div class="col-1 me-4"><button type="button" class="btn btn-outline-dark">Wednesday</button></div>
+                                <div class="col-1 mx-2"><button type="button" class="btn btn-outline-dark">Thursday</button></div>
+                                <div class="col-1 mx-2"><button type="button" class="btn btn-outline-dark">Friday</button></div>
+                                <div class="col-1 mx-2"><button type="button" class="btn btn-outline-dark">Saturday</button></div>
                             </div>
                         </div>
                       </div>
