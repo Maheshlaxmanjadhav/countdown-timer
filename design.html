@@ -89,7 +89,7 @@
 
 /* The popup form - hidden by default */
 .form-popup {
- 
+    display: none;
 position: fixed;
 bottom: 134px;
 right: 10%;
@@ -258,7 +258,7 @@ opacity: 0.8;
                     <button type="button" class="btn btn-success1 open-button" onclick="openForm()">Add New Schedule</button>
 
                     <div class="form-popup" id="myForm">
-                        <form action="#" class="form-container shadow mt-4">
+                        <form action="#" class="form-container shadow mt-4 justify-content-center">
                             <h4 class="fw-bold text-center">Create New Schedule</h4><br>
                             <div class="row">
                                 <div class="col">
@@ -280,9 +280,9 @@ opacity: 0.8;
                                     <input type="number" id="week" name="wk" required style="border: 1px solid rgb(138, 138, 138); border-radius: 10px;">
                                 </div>
                             </div>
-                            <div class="row justify-content-center">
-                            <div class="col"><button type="button" class="btn cancel" onclick="closeForm()">Close</button></div>
-                           <div class="col"><button type="submit" class="btn">Create</button></div>
+                            <div class="row">
+                                <div class="col"><button type="button" class="btn cancel" onclick="closeForm()">Close</button></div>
+                                <div class="col"><button type="submit" class="btn">Create</button></div>
                              </div>
                         </form>
                     </div>
