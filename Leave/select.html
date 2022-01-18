@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Company</title>
+    <link href="select.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <h1>Select Your Company</h1>
+
+        <select id="select" onchange="fun()">
+            <option value="opt1" selected>Select Your Company</option>
+            <option value="1">Infosys</option>
+            <option value="2">Wipro</option>
+            <option value="3">SangamOne</option>
+            <option value="4">Infantry Home</option>
+        </select>
+    </div>
+<script>
+function fun(){
+    var sel=document.getElementById("select");
+    var selectval=sel.options[sel.selectedIndex].value;
+    if(selectval=="opt1"){
+        alert("Please select your company");
+    }else{
+        window.open("home.html","_blank");
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.container{
+    text-align: center;
+    background-color:wheat;
+    padding: 25px;
+}
+.container h3{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contact_form input,.msg{
+    width: 30%;
+    outline: none;
+    border: none;
+    margin: 3px;
+    padding: 10px;
+}
+.contact_form .type{
+    margin-right: 50px;
+    padding: 6px;
+    background-color: white;
+    outline: none;
+    border: none;
+    width: 215px;
+}
+.contact_form .sub{
+    padding: 6px;
+    background-color: white;
+    outline: none;
+    border: none;
+    width: 136px;
+    background-color: tomato;
+    font-weight: bold;
+    border-radius: 25px;
+}
+.contact_form .sub:hover{
+    background-color: yellow;
+}
+@media(max-width:600px){
+    .contact_form .type{
+        width: 60px;
+        margin-right: 5px;
+        border-radius: 10px;
+    }
+    .contact_form .sub{
+        width: 60px;
+    }
+}

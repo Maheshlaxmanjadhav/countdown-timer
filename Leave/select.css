@@ -1,0 +1,15 @@
+body{
+    background-color: tomato;
+}
+#select{
+    width: 35%;
+    padding: 15px;
+}
+.container{
+    text-align: center;
+}
+@media(max-width:600px){
+    #select{
+        width: 70%;
+    }
+}
