@@ -38,11 +38,14 @@
 }
 @media(max-width:600px){
     .contact_form .type{
-        width: 60px;
+        width: 45%;
         margin-right: 5px;
         border-radius: 10px;
     }
     .contact_form .sub{
         width: 60px;
+    }
+    .contact_form input,.msg{
+        width: 60%;
     }
 }
