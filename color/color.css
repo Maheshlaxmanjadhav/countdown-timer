@@ -7,6 +7,11 @@ input{
 input:hover{
     border: 1px solid rgb(0, 0, 0, 0.5);
 }
+footer{
+    text-align: center;
+    margin-top: 80px;
+    background-color: rgb(94, 94, 94);
+}
 @media(max-width:600px){
     input{
         width: 330px;
