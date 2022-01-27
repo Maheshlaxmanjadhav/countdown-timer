@@ -3,6 +3,7 @@ input{
     height: 80px;
     border: none;
     border-radius: 10px;
+    text-align: center;
 }
 input:hover{
     border: 1px solid rgb(0, 0, 0, 0.5);
