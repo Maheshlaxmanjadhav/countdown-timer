@@ -33,5 +33,15 @@
 
         function londonTime(){
         var a=document.getElementById("l").innerHTML = new Date().toLocaleString("en-US",{timeZone:'Europe/London',timeStyle:'medium',hourCycle:'h12'});
-      }
-      setInterval(londonTime,1000);
+      }setInterval(londonTime,1000);
+      function losTime(){
+        var a=document.getElementById("la").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/Los_Angeles',timeStyle:'medium',hourCycle:'h12'});
+      }setInterval(losTime,1000);
+      function newYork(){
+        var a=document.getElementById("ny").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/New_York',timeStyle:'medium',hourCycle:'h12'});
+      }setInterval(newYork,1000);
+      function dubai(){
+        var a=document.getElementById("db").innerHTML = new Date().toLocaleString("en-US",{timeZone:'Asia/Dubai',timeStyle:'medium',hourCycle:'h12'});
+      }setInterval(dubai,1000);
+
+      
