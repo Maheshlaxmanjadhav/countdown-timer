@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+    <link href="time.css" rel="stylesheet">
+</head>
+<body onload="initTime()">
+    <div class="container">
+        <div class="date">
+            <span id="day">Day</span>,
+            <span id="month">Month</span>
+            <span id="dayNum">DayNum</span>,
+            <span id="year">Year</span>
+        </div>
+        <div class="time">
+            <span id="hour">00</span>:
+            <span id="minute">00</span>:
+            <span id="second">00</span>
+            <span id="per">AM</span>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="timezone1">
+            <p>London</p>
+            <p id="l"></p>
+        </div>
+        <div class="timezone2">
+            <p>kolkatta</p>
+            <p id="k"></p>
+        </div>
+        <div class="timezone3">
+            <p>paris</p>
+            <p id="p"></p>
+        </div>
+        <div class="timezone4">
+            <p>lakhnow</p>
+            <p id="l1"></p>
+        </div>
+    </div>
+    <script src="time.js"></script>
+</body>
+</html>
