@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CountDown1</title>
+<link rel="stylesheet" type="text/css" href="counter.css">
+</head>
+<body>
+<div>
+    <form name="form1">
+        <span id="b">Select the data and time</span>
+        <input type="datetime-local" name="cdate" id="cdate"/><br/>
+        <button type="button" onClick="callme()"> submit </button>
+        <table id="dis">
+            <tr>
+            <td colspan="4" class="t" id="eve">Event Name Display Here</td>
+            </tr>
+            <tr>
+            <td id="days">D,</td>
+            <td id="hours">H:</td>
+            <td id="minutes">M:</td>
+            <td id="seconds">S</td>
+            </tr>
+            <tr>
+            <td>Days</td>
+            <td>Hours</td>
+            <td>Minutes</td>
+            <td>Seconds</td>
+            </tr>
+            </table>
+    </form>
+</div>
+<script language="javascript" type="text/javascript" src="counter.js"></script>
+</body>
+</html>

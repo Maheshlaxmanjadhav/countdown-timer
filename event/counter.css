@@ -1,0 +1,38 @@
+*{margin:0;padding:0;}
+div{
+height:100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color:#9c0000;
+font-weight: bold;
+font-size:20px;
+text-align:center;
+}
+#dis{
+    display: none;
+}
+.t{
+font-size:30px;
+font-weight: bold;
+padding:40px;
+color:#f7115a;
+}
+input{
+font-size:20px;
+font-weight: bold;
+padding:10px;
+color:#e66205;
+}
+.b{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color:#f7115a;
+font-weight: bold;
+font-size:30px;
+text-align:center;
+padding:20px;
+}
