@@ -2,14 +2,70 @@
 <html>
 <head>
 <title>CountDown1</title>
-<link rel="stylesheet" type="text/css" href="counter.css">
+<style>
+#dis{
+    display: none;
+}
+.abc{
+    text-align: center;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+#container{
+    text-align: center;
+}
+input[type=text]{
+    margin: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    width: 20%;
+    height: 50px;
+    background-color: rgb(216, 216, 216);
+}
+input[type=datetime-local]{
+    color: black;
+    width: 20%;
+    height: 50px;
+    background-color: rgb(206, 206, 206);
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+button{
+    margin: 10px;
+    width: 15%;
+    padding: 5px;
+    background-color: rgb(202, 54, 54);
+    border: none;
+    border-radius: 10px;
+}
+#b{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+</style>
 </head>
 <body>
-<div>
     <form name="form1">
-        <span id="b">Select the data and time</span>
-        <input type="datetime-local" name="cdate" id="cdate"/><br/>
-        <button type="button" onClick="callme()"> submit </button>
+        <div id="container">
+            <span id="b">Select the date and time</span><br>
+            <input type="text" name="ename" id="ename" placeholder="Event Name"><br/>
+            <input type="datetime-local" name="cdate" id="cdate"/><br>
+            <button type="button" onClick="callme()">submit</button>
+        </div>
+        <div class="abc">
         <table id="dis">
             <tr>
             <td colspan="4" class="t" id="eve">Event Name Display Here</td>
@@ -20,15 +76,46 @@
             <td id="minutes">M:</td>
             <td id="seconds">S</td>
             </tr>
-            <tr>
-            <td>Days</td>
-            <td>Hours</td>
-            <td>Minutes</td>
-            <td>Seconds</td>
-            </tr>
             </table>
+        </div>
     </form>
-</div>
-<script language="javascript" type="text/javascript" src="counter.js"></script>
+<script>
+    function countdown()
+    {
+        var x=document.getElementById("ename").value;
+        document.getElementById("eve").innerHTML=x+" Event Starts on";
+
+        const v1=document.getElementById("cdate").value;
+        console.log(v1);
+
+        var time = new Date(v1).getTime();
+
+        var today=new Date().getTime();
+
+        var diff = time-today;
+
+        var d = Math.floor(diff/(1000*60*60*24));
+        console.log(d);
+
+        var h = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+        console.log(h);
+
+        var m = Math.floor((diff%(1000*60*60))/(1000*60));
+        console.log(m);
+
+        var s = Math.floor((diff%(1000*60))/(1000));
+        console.log(s);
+
+        document.getElementById("days").innerHTML=d+"d";
+        document.getElementById("hours").innerHTML=h+"H";
+        document.getElementById("minutes").innerHTML=m+"M";
+        document.getElementById("seconds").innerHTML=s+"S";
+    }
+function callme(){
+	document.getElementById("dis").style.display="block";
+	document.getElementById("container").style.display="none";
+    document.body.style.background="rgba(255, 255, 0, 0.5)";
+	setInterval(countdown,1000);}
+</script>
 </body>
 </html>
