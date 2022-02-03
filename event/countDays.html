@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CountDown1</title>
+<style>
+#dis{
+    display: none;
+}
+.abc{
+    text-align: center;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+#container{
+    text-align: center;
+}
+input[type=text]{
+    margin: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    width: 20%;
+    height: 50px;
+    background-color: rgb(216, 216, 216);
+}
+input[type=date]{
+    color: black;
+    width: 20%;
+    height: 50px;
+    background-color: rgb(206, 206, 206);
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+button{
+    margin: 10px;
+    width: 15%;
+    padding: 5px;
+    background-color: rgb(202, 54, 54);
+    border: none;
+    border-radius: 10px;
+}
+#b{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.t{
+    margin: 50px;
+    color: brown;
+    font-size: 25px;
+    font-weight: bold;
+}
+.t1{
+    font-size: 20px;
+    font-weight: bold;
+    color: royalblue;
+}
+</style>
+</head>
+<body>
+    <form name="form1">
+        <div id="container">
+            <span id="b">Select the date and time</span><br>
+            <input type="text" name="ename" id="ename" placeholder="Event Name"><br/>
+            <input type="date" name="cdate" id="cdate"/><br>
+            <button type="button" onClick="callme()">submit</button>
+        </div>
+        <div class="abc">
+        <table id="dis">
+            <tr>
+                <td colspan="4" class="t" id="msg">Message</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="t1" id="msg2">Message</td>
+            </tr>
+            <tr>
+            <td colspan="4" class="t2" id="eve">Event Name Display Here</td>
+            </tr>
+            <tr>
+            <td id="days"></td>
+            </tr>
+            </table>
+        </div>
+    </form>
+<script>
+    function countdown()
+    {
+        var x=document.getElementById("ename").value;
+        document.getElementById("msg").innerHTML="EVENTS & PARTIES"
+        document.getElementById("msg2").innerHTML="Remaining Days For"
+        document.getElementById("eve").innerHTML=x+" Party";
+
+        const v1=document.getElementById("cdate").value;
+
+        var time = new Date(v1).getTime();
+
+        var today=new Date().getTime();
+
+        var diff = time-today;
+
+        var d = Math.floor(diff/(1000*60*60*24));
+
+        document.getElementById("days").innerHTML=d+" days";
+    }
+function callme(){
+	document.getElementById("dis").style.display="block";
+	document.getElementById("container").style.display="none";
+    document.body.style.background="rgba(255, 255, 0, 0.5)";
+	setInterval(countdown,1000);}
+</script>
+</body>
+</html>
