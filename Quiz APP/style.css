@@ -1,0 +1,15 @@
+li{
+    list-style: none;
+}
+body{
+    margin: 10%;
+    padding: 5%;
+
+}
+.container{
+    background-color: rgb(140, 141, 143);
+    padding: 6px 0px 0px 1px;
+}
+#showScore h1{
+    color:brown
+}
